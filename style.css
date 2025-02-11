@@ -1,0 +1,31 @@
+h1{
+    font-size:4rem;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:2%;
+}
+body{
+    background-color:#9fcaed;
+}
+nav{
+    font-size:1rem;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+nav a{
+    text-decoration: none;
+    font:arial;
+    font-weight:bold;
+    color:coral;
+}
+.test1{
+    padding:10px;
+    margin-top:1.5%;
+    transition:0.25s;   /* Nova CSS značka 1/10 ANIMACIJE*/
+    border-color:black;  /* Nova CSS značka 2/10 LOGIČNO */
+    border-width:0px;
+}
+

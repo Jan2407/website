@@ -1,0 +1,3 @@
+Za projetk z Arduinom sva si moj sošolec Filip in jaz izbrala senzor za barva. Arduino barvni senzor zaznava barve s pomočjo svetlobnih senzorjev in LED diod. Senzor vsebuje tri fotodiode, ki zaznavajo rdečo, zeleno in modro svetlobo (RGB). Ko senzor osvetlimo z belo svetlobo se svetloba odbija od površine in vpada v fotodiode. Vsaka fotodioda meri intenziteto posamezne barvne komponente. Arduino nato prebere te vrednosti preko analognih vhodov in jih uporabi za določitev barve. Rezultati so prikazani v obliki RGB vrednosti. Saj senzor ni zelo natančen in mu gre zaupati zgolj za primarne barve RGB, sva iz pridobljenih vrednosti uporabila le najvišjo in po njej poimenovala barvo.
+
+

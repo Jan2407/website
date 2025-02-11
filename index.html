@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Bootstrap include link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./slike/logo.png">
+    <title>Color sensor</title>
+    <script src="script.js"></script> <!--To je nova značka 3/10-->
+</head>
+<body>
+    <nav>
+        <a href="index.html">Domov</a> |
+        <a href="arduino.html">Zgodovina</a> |
+        <a href="zanimivosti.html">Zanimivosti</a> |
+        <a href="projekt.html">Opis projekta</a> |
+        <a href="izvedba.html">Izvedba</a>
+    </nav>
+    <h1>Arduino barvni senzor</h1>
+    <div> <!--To je nova značka 2/10-->
+        <a href="arduino.html">
+            <div onmouseover = "when_over(this);" onmouseout="when_notover(this);" class="card test1" style="width: 22%; display:inline; margin-left:3%; position:fixed;">
+                <img src="./slike/pic1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h3 class="card-title">Zgodovina Arduina</h3> <!--To je nova značka 1/10-->
+                <p class="card-text">Arduino obstaja že od leta 2005 in se že od takrat programira v programskem jeziku C/C++</p>
+                </div>
+            </div>
+        </a>
+        <!--Card 2-->
+        <a href="zanimivosti.html">
+            <div onmouseover = "when_over(this)" onmouseout="when_notover(this)" class="card test1" style="width: 22%; display:inline; margin-left:27%; position:fixed;">
+                <img src="./slike/pic2.jpg" class="card-img-top" alt="funny picture of robot">
+                <div class="card-body">
+                <h3 class="card-title">Zanimivosti</h3>
+                <p class="card-text">Arduino se uporablja v umetnosti, izobraževanju, v znanosti, v avtomatizaciji doma ... </p>
+                </div>
+            </div>
+        </a>
+        <!--Card 3-->
+        <a href="projekt.html">
+            <div onmouseover = "when_over(this)" onmouseout="when_notover(this)" class="card test1" style="width: 22%; display:inline; margin-left:51%; position:fixed;">
+                <img src="./slike/pic3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h3 class="card-title">Opis projekta</h3>
+                <p class="card-text">V projektu sva raziskala uporabo Arduina za zaznavanje RGB barv z barvnim senzorjem in več...</p>
+                </div>
+            </div>
+        </a>
+        <!--Card 4-->
+        <a href="izvedba.html">
+            <div onmouseover = "when_over(this)" onmouseout="when_notover(this)" class="card test1" style="width: 22%; display:inline;margin-left:75%; position:fixed;">
+                <img src="./slike/pic4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h3 class="card-title">Izvedba dela</h3>
+                <p class="card-text">Projekt sva zgradila s pomočjo YT videa iz katerega sva si izposodila kodo in način izgradnje</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+pic1 -- Wikipedia
+pic2 -- Osnovna šola sežana
+pic3 -- https://shreshtait.com/
+pic4 -- https://racheldebarros.com/
+logo -- Arduino.com
+arduino.html -- Wikipedia.com
+pic5 -- https://linuxcapable.com/how-to-install-arduino-on-debian-linux/

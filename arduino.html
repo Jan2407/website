@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Bootstrap include link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./slike/logo.png" type="image">
+    <title>Arduino</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+      </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Domov</a> |
+        <a href="arduino.html">Zgodovina</a> |
+        <a href="zanimivosti.html">Zanimivosti</a> |
+        <a href="projekt.html">Opis projekta</a> |
+        <a href="izvedba.html">Izvedba</a>
+      </nav>
+    <h1>Zgodovina Arduina</h1>
+    <p>
+        Projekt Arduino se je začel na Inštitutu za interaktivni dizajn Ivrea(IDII) v Italiji. Takrat so študenti uporabljali osnovni mikrokontroler Stamp, ki je stal 50 $. Leta 2004 je Hernando Barragán ustvaril razvojno platformo Wiring kot projekt za svojo magistrsko nalogo na IDII, pod mentorstvom Massima Banzi in Caseyja Reasa. Casey Reas je znan po tem, da je skupaj z Benom Fryjem soavtor razvojne platforme Processing. Cilj projekta je bil ustvariti preprosta, poceni orodja za ustvarjanje digitalnih projektov s strani ne-inženirjev. Platforma Wiring je vsebovala tiskan vezje (PCB) z mikrokontrolerjem ATmega128, IDE, ki temelji na Processing, in funkcije knjižnice za enostavno programiranje mikrokontrolerja. Leta 2005 sta Massimo Banzi in David Mellis, še en študent IDII, skupaj z Davidom Cuartiellesom razširila Wiring z dodajanjem podpore za cenejši mikrokontroler ATmega8. Novi projekt, ki je nastal iz Wiringa, je bil poimenovan Arduino.
+        Začetna ekipa Arduina je obsegala Massima Banzi, Davida Cuartielesa, Toma Igoeja, Gianluca Martino in Davida Mellisa.
+        Po dokončanju platforme so v odprtokodni skupnosti začeli distribuirati lažje in cenejše različice. Po ocenah iz sredine leta 2011 je bilo komercialno proizvedenih več kot 300.000 uradnih Arduinov, leta 2013 pa je bilo teh uradnih plošč v rokah uporabnikov že 700.000.
+    </p>
+    <h2>Vrste mikrokontrolerjev uporabljene v razvoju Arduina</h2>
+    <ul>
+        <li>ATmega128</li>
+        <li>ATmega8</li>
+    </ul>
+    <img style="width:75%; margin-left:12.5%" center src="./slike/pic7.png"/>
+    <hr>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Komponenta</th>
+            <th>Opis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>USB vtičnica</td>
+            <td>V to vtičnico je priključen USB kabel, ki se uporablja za prenos posameznih krmilnih programov na Arduino.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Gumb RESET</td>
+            <td>S tem gumbom lahko ročno ponastavite Arduino, če ne more nadaljevati samodejnega delovanja zaradi okvare.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>ICSP vmesnik (USB vmesnik)</td>
+            <td>Zahvaljujoč vmesniku ICSP (In Circuit Serial Programming) je logično vezje mogoče programirati neposredno v aplikacijskem sistemu.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>I²C vodilo</td>
+            <td>V primeru vodila I²C se podatki prenašajo iz glavne naprave v povezane podrejene naprave prek linij SCL (Serial Clock) in SDA (Serial Data).</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Integrirana LED</td>
+            <td>Dioda "L" je interno povezana s pinom 13 za namene testiranja.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Digitalni vhodi/izhodi</td>
+            <td>Te I/O zatiče lahko konfigurirate kot digitalne vhode ali izhode. Po potrebi jih šest deluje kot impulzno širinsko modulirane PWM izhode.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>LED signalizacija</td>
+            <td>LED "RX" in "TX" vizualno označujeta prenos podatkov iz računalnika v Arduino UNO.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Dioda za delovno napetost</td>
+            <td>Dioda "ON" označuje napajanje plošče mikrokrmilnika. Zasveti, ko je plošča priključena na napajanje.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Kristalni oscilator (gonilnik)</td>
+            <td>Kristal zagotavlja, da oscilator v krmilniku ostane stabilen in niha s konstantno frekvenco.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>ICSP vmesnik (gonilnik)</td>
+            <td>Po potrebi lahko krmilnik programiramo preko tega vmesnika. Ker pa je to narejeno že v tovarni, to običajno ni potrebno.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Mikrokrmilnik</td>
+            <td>Mikrokrmilnik je polprevodniški sistem, sestavljen iz procesorja, perifernih naprav in pomnilnika. Včasih se imenuje tudi SoC (System-on-a-Chip).</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Analogni vhodi</td>
+            <td>Če so kot vhodne vrednosti na voljo analogne napetosti, je treba uporabiti teh šest vhodov.</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Napajalni kontakti</td>
+            <td>Ti zatiči lahko napajajo mikrokrmilniško ploščo ali zaznavajo 3,3 V ali 5 V.</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Usmerniška dioda</td>
+            <td>Na voljo je usmerniška dioda, zahvaljujoč kateri sta lahko v napajalni vtičnici prisotna enosmerni tok in izmenična napetost.</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Polnilni kondenzatorji</td>
+            <td>Polnilni kondenzatorji zgladijo napajalno napetost. En kondenzator je priključen pred stabilizatorjem napetosti 5 V, drugi pa za njim.</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Napajalni priključek</td>
+            <td>Da mikrokrmilniška plošča po programiranju deluje brez USB povezave, mora biti napajana iz zunanjega napajalnika.</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Stabilizator napetosti</td>
+            <td>Stabilizator napetosti ustvarja stabilno napetost 5 V iz napajalne napetosti, ki naj bo med 7 in 12 V (AC ali DC).</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Kristalni oscilator (krmilnik USB)</td>
+            <td>Quartz poskrbi, da oscilator v USB krmilniku niha stabilno in s konstantno frekvenco.</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>USB vmesnik</td>
+            <td>Vmesnik USB pretvori signale, ki prihajajo skozi vrata USB, v obliko, ki je primerna za krmilnik.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <img style="width:55%; margin-left:2.5%; display:inline;" center src="./slike/pic6.jpg"/>
+      <img style="width:40%; display:inline;" center src="./slike/pic8.webp"/>
+      <br>
+      <hr>
+    <a class="btn btn-primary" href="https://wikipedia.com/wiki/arduino">Te zanima še več ?</a>
+</body>
+</html>
